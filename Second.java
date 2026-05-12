@@ -1,4 +1,3 @@
-package my_repo;
 
 import java.io.*;
 import java.util.*;
