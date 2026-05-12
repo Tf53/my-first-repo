@@ -46,17 +46,17 @@ public class Main {
 
         // Example: read two integers and output their sum
         int n = fs.nextInt();
-        long k = fs.nextLong();
+        long maxN = fs.nextLong();
         PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
         for (int i = 0; i < n; i++) {
             long x = fs.nextLong();
             pq.add(new long[] { x, (long) i + 1 });
         }
 
-        while (k > 0) {
+        while (maxN > 0) {
             if (pq.size() < 2) {
                 long[] t = pq.poll();
-                t[0] += t[1] * k;
+                t[0] += t[1] * maxN;
                 pq.add(t);
                 break;
             }
@@ -69,10 +69,10 @@ public class Main {
 
             long need = diff / step + 1;
 
-            long count = Math.min(need, k);
+            long count = Math.min(need, maxN);
 
             t[0] += step * count;
-            k -= count;
+            maxN -= count;
 
             pq.add(t);
         }
