@@ -53,7 +53,7 @@ public class Main {
             pq.add(new long[] { x, (long) i + 1 });
         }
 
-        // 再帰関数
+        // 繰り返し
         while (maxN >= 0) {
             if (pq.size() < 2) {
                 long[] t = pq.poll();
@@ -62,8 +62,8 @@ public class Main {
                 break;
             }
 
-            long[] t = pq.peek();// 最小値
-            long[] s = pq.peek();// ２番目に小さい
+            long[] t = pq.peek(); // 最小値
+            long[] s = pq.peek(); // 最大値
 
             long diff = s[0] - t[0];
             long step = t[1];
