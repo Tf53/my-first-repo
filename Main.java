@@ -78,6 +78,6 @@ public class Main {
             pq.add(t);
         }
 
-        System.out.println(pq.peek()[0]);
+        System.out.println(pq.peek()[1]);
     }
 }
