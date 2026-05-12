@@ -53,7 +53,7 @@ public class Main {
             pq.add(new long[] { x, (long) i + 1 });
         }
 
-        while (maxN > 0) {
+        while (maxN >= 0) {
             if (pq.size() < 2) {
                 long[] t = pq.poll();
                 t[0] += t[1] * maxN;
