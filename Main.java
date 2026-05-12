@@ -46,7 +46,7 @@ public class Main {
 
         // Example: read two integers and output their sum
         int n = fs.nextInt();
-        long maxN = fs.nextLong();
+        int maxN = fs.nextInt();
         PriorityQueue<long[]> pq = new PriorityQueue<>((a, b) -> Long.compare(a[0], b[0]));
         for (int i = 0; i < n; i++) {
             long x = fs.nextLong();
