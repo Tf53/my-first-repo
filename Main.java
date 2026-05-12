@@ -69,7 +69,7 @@ public class Main {
 
             long need = diff / step + 1;
 
-            long count = Math.min(need, maxN);
+            long count = Math.max(need, maxN);
 
             t[0] += step * count;
             maxN -= count;
