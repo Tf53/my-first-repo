@@ -53,7 +53,7 @@ public class Main {
             pq.add(new long[] { x, (long) i + 1 });
         }
 
-        // 再帰関数
+        // 繰り返し
         while (maxN >= 0) {
             if (pq.size() < 2) {
                 long[] t = pq.poll();
