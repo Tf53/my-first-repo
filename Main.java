@@ -62,8 +62,8 @@ public class Main {
                 break;
             }
 
-            long[] t = pq.peek();
-            long[] s = pq.peek();
+            long[] t = pq.peek(); // 最小値
+            long[] s = pq.peek(); // 最大値
 
             long diff = s[0] - t[0];
             long step = t[1];
