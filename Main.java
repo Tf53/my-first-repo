@@ -62,7 +62,7 @@ public class Main {
             }
 
             long[] t = pq.poll();
-            long[] s = pq.peek();
+            long[] s = pq.poll();
 
             long diff = s[0] - t[0];
             long step = t[1];
